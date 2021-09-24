@@ -1,0 +1,31 @@
+/* Video Banner */
+/* Notes: Keep seperate class (for Video Banner width and Bottom space etc..) */
+.video-banner-wrapper {
+  position: relative;
+  height: calc(100vh - 120px);
+}
+
+.video-banner {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+}
+
+.video-banner video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 991px) {
+  .video-banner-wrapper{
+    height: 840px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .video-banner-wrapper{
+    height: calc(100vh - 95px);
+  }
+}

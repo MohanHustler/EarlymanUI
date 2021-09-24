@@ -1,0 +1,60 @@
+.cursor {
+  position: fixed;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #FC3A00;
+  pointer-events: none;
+  z-index: 99999;
+  transition: transform 0.25s ease;
+}
+
+/* Height and width is 80px */
+.cursor.hover-lg-active {
+  -webkit-transform: scale(4);
+  -ms-transform: scale(4);
+  transform: scale(4);
+}
+
+/* Height and width is 60px */
+.cursor.hover-sm-active {
+  -webkit-transform: scale(3);
+  -ms-transform: scale(3);
+  transform: scale(3);
+}
+
+html, * {
+  cursor: none;
+}
+
+.cursor-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  transition: all 0.5s ease;
+}
+
+.cursor label {
+  color: #fff;
+  visibility: hidden;
+  transform: matrix(0.93, -0.37, 0.37, 0.93, 0, 0) !important;
+  letter-spacing: 0.4px;
+}
+
+.cursor.hover-lg-active label {
+  visibility: visible;
+  font-size: 4.5px;
+}
+
+.cursor.hover-sm-active label {
+  visibility: visible;
+  font-size: 4.5px;
+}
+
+@media screen and (max-width: 1024px) {
+  .cursor {
+    display: none;
+    position: initial;
+  }
+}

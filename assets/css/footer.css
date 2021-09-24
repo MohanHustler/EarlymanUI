@@ -1,0 +1,140 @@
+.footer {
+  padding: 32px 30px;
+  padding-top: 140px;
+}
+
+.footer-item {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.footer-item-contact-list h5 {
+  color: #FC3A00;
+  font-family: "robotomono-medium";
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  padding-bottom: 8px;
+}
+
+.footer-item-contact-list label {
+  color: #fff;
+  font-size: 18px;
+  letter-spacing: 0.4px;
+  display: inline-block;
+  width: 100%;
+  font-family: "weissenhofgrotesk";
+  word-spacing: initial;
+}
+
+.footer-item-contact-list.email {
+  padding-right: 54px;
+}
+
+@media screen and (max-width: 1024px) {
+  .footer-content p {
+    width: 100%;
+    font-size: 28px;
+    line-height: 40px;
+    letter-spacing: 0.4px;
+  }
+
+  .footer-item-contact.first {
+    padding-right: 0px;
+  }
+}
+@media screen and (max-width: 991px) {
+  .footer-content {
+    width: 540px;
+    margin: 0px auto;
+  }
+
+  .footer-content p {
+    width: 100%;
+    font-size: 32px;
+    line-height: 42px;
+    letter-spacing: 0.4px;
+  }
+
+  .footer-item-time {
+    height: 100px;
+    width: 100px;
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .footer-item {
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  .footer-item-contact-list {
+    min-width: 194px;
+  }
+
+  .footer-item-contact-list.email {
+    padding-bottom: 18px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .footer {
+    padding: 60px 20px 12px;
+  }
+
+  .footer-content {
+    padding-top: 0px;
+    padding-bottom: 64px;
+    width: 100%;
+  }
+
+  .footer-item-contact-list h5 {
+    padding-bottom: 0px;
+    font-size: 14px;
+    line-height: 21px;
+    font-family: "robotomono";
+  }
+
+  .footer-item-contact-list label {
+    font-size: 16px;
+    line-height: 32px;
+    letter-spacing: 0.2px;
+  }
+
+  .footer-item {
+    justify-content: flex-start;
+  }
+
+  .footer-item-detail {
+    flex-direction: column;
+  }
+
+  .footer-item-contact.first {
+    padding-bottom: 32px;
+  }
+
+  .footer-item-contact-list.email {
+    padding-right: 16px;
+  }
+
+  .index-wrapper {
+    margin-bottom: 130px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .footer-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-item-contact-list {
+    min-width: 170px;
+  }
+
+  .footer-item-contact-list.email {
+    padding-bottom: 12px;
+    padding-right: 0px;
+  }
+}

@@ -1,0 +1,53 @@
+.page-scroll-viewport {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 120px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transition: top 0.5s linear;
+}
+
+.v-nav-up {
+  top: 75px;
+}
+
+.v-nav-down {
+  top: 0;
+}
+
+.page-scroll-container {  
+  position: absolute;  
+  overflow: hidden;
+  z-index: 10;
+  display: flex;
+  justify-content: center;  
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  right: 0px;
+}
+
+@media screen and (max-width: 1024px) {
+  .page-scroll-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 991px) {
+  .page-scroll-container {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 767px) {
+  .page-scroll-viewport {
+    top: 75px;
+  }
+  .page-scroll-container {
+    width: 100%;
+  }
+}
+

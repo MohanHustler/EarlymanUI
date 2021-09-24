@@ -1,0 +1,110 @@
+.video-banner-wrapper.index {
+  margin-bottom: 160px;
+  overflow: hidden;
+}
+
+.video-banner-wrapper.index .video-banner {
+  width: 80.56%;
+  top: initial;
+  transform: none;
+  bottom: 0px;
+  transition: 1s ease;
+  /* right: -100%; */
+}
+
+.video-banner-wrapper.index .video-banner.loaded {
+  /* right: 0; */
+  /* transition: 1s ease; */
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1024px) and (min-width: 992px) {
+  .vc-lg-info label {
+    font-size: 13px;
+  }
+
+  .footer-item-contact-list h5 {
+    padding-bottom: 5px;
+  }
+
+  .video-banner-wrapper.index {
+    position: initial;
+  }
+
+  .video-banner-wrapper.index .video-banner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  .video-banner-wrapper.index .video-banner {
+    width: calc(100% - 64px);
+    padding: 0px 32px;
+    right: 0;
+  }
+
+  .index-wrapper .video-banner.video-animated {
+    width: 0;
+  }
+
+  .index-wrapper .video-banner.video-animated.loaded {
+    width: calc(100% - 64px);
+  }
+}
+
+@media screen and (max-width: 991px) and (min-width: 768px) {
+  .video-banner-wrapper.index .video-banner {
+    height: calc(100% - 160px);
+    top: initial;
+    transform: initial;
+    bottom: initial;
+  }
+
+  .video-banner-wrapper.index .video-banner .vc-lg-video-wrap {
+    padding-top: 0;
+    height: 100%;
+  }
+
+  .video-banner-wrapper.index .video-banner .overlay-loader {
+    right: 0;
+    margin: 0px auto;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .video-banner-wrapper.index {
+    margin-bottom: 100px;
+    height: calc(100vh - 255px);
+  }
+
+  .video-banner-wrapper.index .video-banner {
+    width: calc(100% - 40px);
+    padding: 0px 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial;
+    height: 100%;
+  }
+
+  .video-banner-wrapper.index .video-banner .vc-lg-video-wrap {
+    padding-top: 0;
+    height: 100%;
+  }
+
+  .video-banner-wrapper.index .video-banner .overlay-loader {
+    right: 0;
+    margin: 0px auto;
+  }
+
+  .index-wrapper .video-banner.video-animated {
+    width: 0;
+  }
+
+  .index-wrapper .video-banner.video-animated.loaded {
+    width: calc(100% - 40px);
+  }
+}

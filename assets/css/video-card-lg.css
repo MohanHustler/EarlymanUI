@@ -1,0 +1,153 @@
+/* Video Banner css */
+.vc-lg-wrap {
+  margin-bottom: 145px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  opacity: 1;
+  width: 100%;
+}
+
+.vc-lg {
+  width: 80.56%;
+  height: 100%;
+}
+
+.director-vc-lg-content .vc-lg-wrap {
+  padding-right: 45px;
+  margin-bottom: 0px;
+}
+
+.director-vc-lg-content .vc-lg {
+  width: 80%;
+  height: 631px;
+}
+
+.vc-lg video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  outline: 0;
+}
+
+.vc-lg-info {
+  display: flex;
+  justify-content: flex-end;
+  margin: 15px 30px;
+  /* overflow: hidden; */
+}
+
+.vc-lg-info label {
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+  line-height: 17px;
+  letter-spacing: 0.4px;
+  position: relative;
+  /* top: 0;
+  transition: top 0.3s; */
+}
+
+.vc-lg-video-wrap {
+  width: 100%;
+  padding-top: 56.25%;
+  height: 0px;
+  position: relative;
+}
+
+.vc-lg-video-wrap video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.video-wrap .video {
+  width: 100%;
+  padding-top: 42.85%;
+  height: 0px;
+  position: relative;
+}
+
+.video-wrap .video video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.textslide {
+  overflow: hidden;
+}
+
+.text-animate-wrap {
+  position: relative;
+  top: 0px;
+  transition: top 0.3s;
+}
+
+.text-animate-wrap.on-scroll-hide,
+.text-animate-wrap.on-load-hide {
+  top: 21px;
+}
+
+.text-animate-wrap.with-para.on-scroll-hide,
+.text-animate-wrap.with-para.on-load-hide {
+  top: 40px
+}
+
+/* Responsive */
+
+@media screen and (max-width: 991px) {
+  .vc-lg-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .vc-lg {
+    width: 100%;
+  }
+
+  .vc-lg-wrap {
+    padding: 0px 32px;
+    margin-bottom: 110px;
+    width: calc(100% - 64px);
+  }
+
+  .vc-lg-info {
+    margin: 10px 0px;
+  }
+
+  .vc-lg-info label {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .vc-lg-content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .vc-lg {
+    width: 100%;
+  }
+
+  .vc-lg-wrap {
+    padding: 0px 20px;
+    margin-bottom: 64px;
+    width: calc(100% - 40px);
+  }
+
+  .vc-lg-info {
+    margin: 10px 0px;
+  }
+
+  .vc-lg-info label {
+    font-size: 12px;
+  }
+}

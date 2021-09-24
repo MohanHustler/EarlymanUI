@@ -1,0 +1,191 @@
+.video-modal {
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  z-index: 9999;
+  top: 0;
+  left: 0;
+  background-color: #000;
+  transition: all 0.5s;
+  display: none;
+}
+
+.video-modal.active {
+  display: flex;
+}
+
+.video-modal-content {
+  transition: all 0.5s;
+  transform: translate(0px, 100px);
+  width: 100%;
+  overflow: hidden;
+}
+
+.video-modal-content.moveaside {
+  transform: translate(500px, 100px);
+}
+
+.video-modal-close,
+.video-modal-credits {
+  height: 100px;
+  width: 100%;
+  left: 30px;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  z-index: 99;
+}
+
+.video-modal-credits {
+  bottom: 0px;
+}
+
+.video-modal-close a,
+.video-modal-credits a {
+  color: #fff;
+  font-size: 14px;
+  line-height: 31px;
+  text-transform: uppercase;
+}
+
+.video-modal-credits a {
+  display: flex;
+  align-items: center;
+}
+
+.video-modal-credits a span {
+  height: 27px;
+  margin-left: 11px;
+  display: none;
+}
+
+.video-modal-credits a span svg {
+  height: 14px;
+  width: 14px;
+}
+
+.video-modal-credits a span.active {
+  display: block;
+}
+
+.video-modal-source {
+  height: calc(100% - 200px);
+  position: relative;
+  right: 0%;
+  transition: 1s ease;
+}
+
+.video-modal-source video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.video-modal-credits-details {
+  position: absolute;
+  height: 100%;
+  width: 500px;
+  display: none;
+  transition: all 0.5s;
+  flex-direction: column;
+  justify-content: flex-end;
+  bottom: 100px;
+}
+
+.video-modal-credits-details.active {
+  display: flex;
+}
+
+.video-modal-credits-details ul {
+  padding: 0px 30px;
+  padding-bottom: 34px;
+}
+
+.video-modal-credits-details ul li {
+  display: flex;
+}
+
+.video-modal-credits-details ul li label {
+  color: #fc3a00;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.4px;
+  line-height: 54px;
+  width: 14%;
+  font-family: "robotomono-medium";
+}
+
+.video-modal-credits-details ul li span {
+  color: #fff;
+  font-size: 16px;
+  letter-spacing: 0.4px;
+  line-height: 54px;
+  font-family: "weissenhofgrotesk";
+  word-spacing: initial;
+  width: 65%;
+  padding-left: 35px;
+}
+
+.video-modal-credits-details ul li:last-child span {
+  line-height: 20px;
+  padding-top: 18px;
+}
+
+.video-js {
+  height: 100%;
+  width: 100%;
+}
+
+.video-js .vjs-control-bar {
+  background-color: transparent !important;
+  margin-bottom: 15px !important;
+  padding: 0px 15px !important;
+}
+
+.video-js .vjs-big-play-button,
+.video-js .vjs-volume-panel,
+.video-js .vjs-picture-in-picture-control,
+.video-js .vjs-fullscreen-control,
+.video-nav-btn {
+  display: none !important;
+}
+
+.vjs-fade-out {
+  display: block;
+  visibility: hidden;
+  opacity: 0;
+}
+
+.video-js .vjs-play-control {
+  outline: 0;
+  display: none;
+}
+
+@media screen and (max-width: 767px) {
+  .video-modal-credits-details ul li span {
+    letter-spacing: 0.2px;
+  }
+
+  .video-modal-credits-details {
+    width: 100%;
+  }
+
+  .video-modal-credits-details ul {
+    padding: 0px 20px;
+  }
+
+  .video-modal-close,
+  .video-modal-credits {
+    width: calc(100% - 20px);
+    left: 20px;
+    height: auto;
+  }
+
+  .video-modal-close {
+    top: 25px;
+  }
+
+  .video-modal-credits {
+    bottom: 25px;
+  }
+}
